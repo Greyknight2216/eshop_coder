@@ -1,0 +1,18 @@
+.card{
+    background-color: $backgroundColor;
+    border: 0px;
+    border-radius: 0px;
+    .card-text{
+        font-family: Roboto;
+        margin-top: 10px;
+        h5{
+          font-weight: map-get($textStyle, medium);
+          color: map-get($textStyle, primaryColorText)
+        }
+        p{
+          color: map-get($textStyle, secondaryColorText);
+          font-weight: map-get($textStyle, bold) ;
+        }
+    }
+}
+/* test */ 

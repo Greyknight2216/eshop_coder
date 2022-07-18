@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@200&family=Source+Sans+Pro&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: Roboto;
+  list-style: none;
+}
+
+/* scroll bar */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: #dddddd;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #eb6864;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* navbar */
+nav {
+  background-color: #eb6864;
+}
+
+body {
+  background-color: #ced4da;
+  height: 100vh;
+}
+
+/* footer */
+footer {
+  background-color: black;
+  padding-top: 10px;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+}
+footer h5 {
+  padding-top: 10px;
+  font-size: 10px;
+  color: white;
+}
+
+/* test */
+/* test */
+.mainCard {
+  overflow: hidden;
+  border-radius: 3px;
+  text-align: center;
+  border-radius: 3px;
+  transition: 0.4s;
+}
+
+.mainCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 180%;
+  width: 75%;
+  height: 100%;
+  transform: skew(45deg);
+  background: rgba(255, 255, 255, 0.1019607843);
+  z-index: 1;
+  opacity: 0.7;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.mainCard:hover::before {
+  left: -180%;
+}
+
+.mainCard img {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(50%);
+  transition: 2s;
+}
+
+.mainCard:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+.mainCard h2 {
+  position: absolute;
+  bottom: 0;
+  padding: 6px 0;
+  color: white;
+  background: #eb6864;
+  font-size: 30px;
+  letter-spacing: 1px;
+  transform-origin: left;
+  transform: perspective(500px) rotateY(-90deg);
+  transition: 2s;
+}
+
+.mainCard:hover h2 {
+  transform: perspective(500px) rotateY(0deg);
+}
+
+.footerIndex {
+  position: fixed;
+}
+
+/* test */
+#contactForm input {
+  margin-top: 5px;
+  margin-left: 3%;
+  width: 90%;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+#contactForm {
+  padding: 20px;
+  width: 300px;
+}
+
+#contactForm input:focus {
+  outline: none;
+  border: 3px solid #eb6864;
+}
+
+#contactForm textarea {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  width: 250px;
+}
+
+#contactForm textarea:focus {
+  outline: none;
+  border: 3px solid #eb6864;
+}
+
+.submitButton {
+  padding-right: 10px;
+}
+
+#submit {
+  background-color: #eb6864;
+  color: white;
+  width: 60px !important;
+}
+
+.labelText {
+  font-weight: 500;
+  color: black;
+}
+
+/* test */
+.card {
+  background-color: #ced4da;
+  border: 0px;
+  border-radius: 0px;
+}
+.card .card-text {
+  font-family: Roboto;
+  margin-top: 10px;
+}
+.card .card-text h5 {
+  font-weight: 500;
+  color: black;
+}
+.card .card-text p {
+  color: #eb6864;
+  font-weight: 600;
+}
+
+/* test */
+/* test *//*# sourceMappingURL=style.css.map */

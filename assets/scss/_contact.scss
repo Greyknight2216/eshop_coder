@@ -1,0 +1,55 @@
+
+
+#contactForm input{
+    margin-top: 5px;
+    margin-left: 3%;
+    width: 90%;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    
+}
+
+#contactForm{
+
+    padding: 20px;
+    width: 300px;
+}
+
+#contactForm input:focus{
+    outline: none;
+    border: 3px solid #eb6864;
+
+}
+
+
+
+#contactForm textarea{
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    width: 250px;
+}
+
+#contactForm textarea:focus{
+    outline: none;
+    border: 3px solid #eb6864;
+
+}
+
+.submitButton{
+    padding-right: 10px;
+}
+
+#submit {
+    background-color:#eb6864;
+    color: white;
+    width: 60px !important;
+
+}
+
+
+.labelText{
+    font-weight: map-get($textStyle, medium);
+    color: map-get($textStyle, primaryColorText);
+}
+
+/* test */ 

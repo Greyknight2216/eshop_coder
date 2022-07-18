@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@200&family=Source+Sans+Pro&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: Roboto;
+    list-style: none;
+}
+
+
+/* scroll bar */ 
+::-webkit-scrollbar{
+    width: 20px;
+}
+
+::-webkit-scrollbar-track{
+    background:#dddddd;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#eb6864
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* navbar */
+nav{
+    background-color: $primaryColor;
+
+}
+
+body{
+    background-color: $backgroundColor;
+    height: 100vh;
+}
+
+/* footer */
+
+footer{
+    background-color: $footerColor;
+    padding-top: 10px;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+        h5{
+        padding-top: 10px;
+        font-size: 10px;
+        color:white;
+    }
+}
+
+/* test */ 
+
