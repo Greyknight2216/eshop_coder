@@ -55,6 +55,7 @@ footer h5 {
   border-radius: 3px;
   text-align: center;
   border-radius: 3px;
+  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -65,11 +66,13 @@ footer h5 {
   left: 180%;
   width: 75%;
   height: 100%;
-  transform: skew(45deg);
+  -webkit-transform: skew(45deg);
+          transform: skew(45deg);
   background: rgba(255, 255, 255, 0.1019607843);
   z-index: 1;
   opacity: 0.7;
   pointer-events: none;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -78,32 +81,39 @@ footer h5 {
 }
 
 .mainCard img {
-  width: 100%;
-  height: 100%;
-  filter: grayscale(50%);
+  -webkit-filter: grayscale(80%);
+          filter: grayscale(80%);
+  -webkit-transition: 2s;
   transition: 2s;
 }
 
 .mainCard:hover img {
-  filter: grayscale(0%);
-  transform: scale(1.1);
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .mainCard h2 {
-  position: absolute;
+  position: fixed;
+  width: 50%;
   bottom: 0;
   padding: 6px 0;
   color: white;
   background: #eb6864;
   font-size: 30px;
   letter-spacing: 1px;
-  transform-origin: left;
-  transform: perspective(500px) rotateY(-90deg);
-  transition: 2s;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: perspective(500px) rotateY(-90deg);
+          transform: perspective(500px) rotateY(-90deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .mainCard:hover h2 {
-  transform: perspective(500px) rotateY(0deg);
+  -webkit-transform: perspective(500px) rotateY(0deg);
+          transform: perspective(500px) rotateY(0deg);
 }
 
 .footerIndex {
@@ -175,4 +185,3 @@ footer h5 {
 }
 
 /* test */
-/* test *//*# sourceMappingURL=style.css.map */

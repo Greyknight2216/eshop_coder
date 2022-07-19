@@ -30,9 +30,7 @@
 }
 
 .mainCard img {
-  width: 100%;
-  height: 100%;
-  filter: grayscale(50%);
+  filter: grayscale(80%);
   transition: 2s;
 }
 
@@ -42,7 +40,8 @@
 }
 
 .mainCard h2 {
-  position: absolute;
+  position: fixed;
+  width: 50%;
   bottom: 0;
   padding: 6px 0;
   color: white;
@@ -51,7 +50,7 @@
   letter-spacing: 1px;
   transform-origin: left;
   transform: perspective(500px) rotateY(-90deg);
-  transition: 2s;
+  transition: .5s;
 }
 
 .mainCard:hover h2 {
@@ -61,5 +60,4 @@
 .footerIndex {
   position: fixed;
 }
-
 /* test */
