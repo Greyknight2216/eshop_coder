@@ -81,8 +81,8 @@ footer h5 {
 }
 
 .mainCard img {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  -webkit-filter: grayscale(80%);
+          filter: grayscale(80%);
   -webkit-transition: 2s;
   transition: 2s;
 }
