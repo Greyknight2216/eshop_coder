@@ -50,6 +50,14 @@ footer h5 {
 
 /* test */
 /* test */
+.buttonsMain {
+  overflow: hidden;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
 .mainCard {
   overflow: hidden;
   border-radius: 3px;
