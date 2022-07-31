@@ -80,20 +80,7 @@
     font-size: 30px;
     letter-spacing: 1px;
   }
-  .mainCard::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 180%;
-    width: 50%;
-    height: 50%;
-    transform: skew(45deg);
-    background: #ffffff1a;
-    z-index: 1;
-    opacity: .7;
-    pointer-events: none;
-    transition: .5s;
-  }
+
 
   .mainCard:hover::before {
     left: -180%;
