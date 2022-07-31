@@ -1,63 +1,136 @@
 /* test */
 
 
-.mainCard {
-  overflow: hidden;
-  border-radius: 3px;
-  text-align: center;
-  border-radius: 3px;
-  transition: .4s;
+
+.buttonsMain {
+  height: auto;
+  position: relative;
+
+  img {
+    width: 400px;
+  }
+
+  h2 {
+    width: 100%;
+    margin-bottom: 45px;
+    color: white;
+    background: $primaryColor;
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (min-width: 768px) {
+  .buttonsMain {
+    overflow: hidden;
+    width: fit-content;
+  }
+
+
+  .mainCard {
+    overflow: hidden;
+    border-radius: 3px;
+    text-align: center;
+    border-radius: 3px;
+    transition: .4s;
+
+    img {
+      width: fit-content;
+      height: fit-content;
+    }
+  }
+
+
+  .mainCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 180%;
+    width: 50%;
+    height: 50%;
+    transform: skew(45deg);
+    background: #ffffff1a;
+    z-index: 1;
+    opacity: .7;
+    pointer-events: none;
+    transition: .5s;
+  }
+
+  .mainCard:hover::before {
+    left: -180%;
+  }
+
+  .mainCard img {
+    filter: grayscale(80%);
+    transition: 2s;
+  }
+
+  .mainCard:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+  }
+
+}
+
+/* H2 media */
+
+@media (min-width:1200px) {
+  .mainCard h2 {
+    position: absolute;
+    z-index: 1;
+    width: 300px;
+    margin-left: 80px;
+    padding: 6px 0;
+    color: white;
+    background: $primaryColor;
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+}
+@media (min-width:768px) {
+  .mainCard h2 {
+    position: absolute;
+    z-index: 1;
+    width: 200px;
+    bottom: 20px;
+    margin-left: 280px;
+    padding: 6px 0;
+    color: white;
+    background: $primaryColor;
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+}
+@media (min-width:996px) {
+  .mainCard h2 {
+    position: absolute;
+    z-index: 1;
+    width: 300px;
+    bottom: 50px;
+    margin-left: 80px;
+    padding: 6px 0;
+    color: white;
+    background: $primaryColor;
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+}
+@media (min-width:1400px) {
+  .mainCard h2 {
+    position: absolute;
+    z-index: 1;
+    width: 300px;
+    bottom: 50px;
+    margin-left: 80px;
+    padding: 6px 0;
+    color: white;
+    background: $primaryColor;
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
 }
 
 
-.mainCard::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 180%;
-  width: 75%;
-  height: 100%;
-  transform: skew(45deg);
-  background: #ffffff1a;
-  z-index: 1;
-  opacity: .7;
-  pointer-events: none;
-  transition: .5s;
-}
 
-.mainCard:hover::before {
-  left: -180%;
-}
 
-.mainCard img {
-  filter: grayscale(80%);
-  transition: 2s;
-}
-
-.mainCard:hover img {
-  filter: grayscale(0%);
-  transform: scale(1.1);
-}
-
-.mainCard h2 {
-  position: fixed;
-  width: 50%;
-  bottom: 0;
-  padding: 6px 0;
-  color: white;
-  background: $primaryColor;
-  font-size: 30px;
-  letter-spacing: 1px;
-  transform-origin: left;
-  transform: perspective(500px) rotateY(-90deg);
-  transition: .5s;
-}
-
-.mainCard:hover h2 {
-  transform: perspective(500px) rotateY(0deg);
-}
-
-.footerIndex {
-  position: fixed;
-}
 /* test */
