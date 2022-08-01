@@ -75,6 +75,7 @@ footer h5 {
   letter-spacing: 1px;
 }
 
+
 @media (max-width: 768px) {
   .buttonsMain h2 {
     font-size: 20px;
@@ -86,6 +87,7 @@ footer h5 {
             justify-content: center;
   }
 }
+
 @media (min-width: 768px) {
   .buttonsMain {
     overflow: hidden;
@@ -109,8 +111,10 @@ footer h5 {
     height: -moz-fit-content;
     height: fit-content;
   }
+
 }
 /* H2 media */
+
 @media (min-width: 768px) {
   .mainCard h2 {
     position: absolute;
@@ -118,6 +122,7 @@ footer h5 {
     width: 200px;
     bottom: 20px;
     margin-left: 230px;
+
     padding: 6px 0;
     color: white;
     background: #eb6864;
@@ -130,6 +135,7 @@ footer h5 {
     position: absolute;
     z-index: 1;
     width: 300px;
+
     bottom: 20px;
     margin-left: 180px;
     padding: 6px 0;
@@ -138,6 +144,7 @@ footer h5 {
     font-size: 30px;
     letter-spacing: 1px;
   }
+  
   .mainCard:hover::before {
     left: -180%;
   }
