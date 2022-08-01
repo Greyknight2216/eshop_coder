@@ -31,7 +31,12 @@ a{
 nav{
     background-color: $primaryColor;
     .nav-item a{
-        font-size: 25px;
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    .navbar-brand{
+        font-size: 30px;
+        padding-right: 25px;
     }
 
 }
@@ -50,7 +55,6 @@ footer{
     width: 50px;
     height: fit-content;
     h5{
-        size: 30px;
         padding-top: 5px;
         color:white;
         font-family: Roboto;

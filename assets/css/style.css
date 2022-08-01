@@ -29,7 +29,12 @@ nav {
   background-color: #eb6864;
 }
 nav .nav-item a {
-  font-size: 25px;
+  font-size: 20px;
+  margin-left: 20px;
+}
+nav .navbar-brand {
+  font-size: 30px;
+  padding-right: 25px;
 }
 
 body {
@@ -47,7 +52,6 @@ footer {
   height: fit-content;
 }
 footer h5 {
-  size: 30px;
   padding-top: 5px;
   color: white;
   font-family: Roboto;
@@ -71,7 +75,7 @@ footer h5 {
   letter-spacing: 1px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
   .buttonsMain h2 {
     font-size: 20px;
     display: -webkit-box;
