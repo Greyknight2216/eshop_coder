@@ -30,6 +30,14 @@ a{
 /* navbar */
 nav{
     background-color: $primaryColor;
+    .nav-item a{
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    .navbar-brand{
+        font-size: 30px;
+        padding-right: 25px;
+    }
 
 
 }
@@ -50,6 +58,7 @@ footer{
     h5{
         padding-top: 5px;
         color:white;
+        font-family: Roboto;
     }
 }
 

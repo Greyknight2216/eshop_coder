@@ -28,6 +28,14 @@ a {
 nav {
   background-color: #eb6864;
 }
+nav .nav-item a {
+  font-size: 20px;
+  margin-left: 20px;
+}
+nav .navbar-brand {
+  font-size: 30px;
+  padding-right: 25px;
+}
 
 body {
   background-color: #ced4da;
@@ -46,6 +54,7 @@ footer {
 footer h5 {
   padding-top: 5px;
   color: white;
+  font-family: Roboto;
 }
 
 /* test */
@@ -64,6 +73,19 @@ footer h5 {
   background: #eb6864;
   font-size: 30px;
   letter-spacing: 1px;
+}
+
+
+@media (max-width: 768px) {
+  .buttonsMain h2 {
+    font-size: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media (min-width: 768px) {
@@ -89,22 +111,40 @@ footer h5 {
     height: -moz-fit-content;
     height: fit-content;
   }
-  .mainCard::before {
-    content: "";
+
+}
+/* H2 media */
+
+@media (min-width: 768px) {
+  .mainCard h2 {
     position: absolute;
-    top: 0;
-    left: 180%;
-    width: 50%;
-    height: 50%;
-    -webkit-transform: skew(45deg);
-            transform: skew(45deg);
-    background: rgba(255, 255, 255, 0.1019607843);
     z-index: 1;
-    opacity: 0.7;
-    pointer-events: none;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
+    width: 200px;
+    bottom: 20px;
+    margin-left: 230px;
+
+    padding: 6px 0;
+    color: white;
+    background: #eb6864;
+    font-size: 30px;
+    letter-spacing: 1px;
   }
+}
+@media (min-width: 996px) {
+  .mainCard h2 {
+    position: absolute;
+    z-index: 1;
+    width: 300px;
+
+    bottom: 20px;
+    margin-left: 180px;
+    padding: 6px 0;
+    color: white;
+    background: #eb6864;
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+  
   .mainCard:hover::before {
     left: -180%;
   }
@@ -121,63 +161,11 @@ footer h5 {
             transform: scale(1.1);
   }
 }
-/* H2 media */
-@media (min-width: 1200px) {
-  .mainCard h2 {
-    position: absolute;
-    z-index: 1;
-    width: 300px;
-    margin-left: 80px;
-    padding: 6px 0;
-    color: white;
-    background: #eb6864;
-    font-size: 30px;
-    letter-spacing: 1px;
-  }
-}
-@media (min-width: 768px) {
-  .mainCard h2 {
-    position: absolute;
-    z-index: 1;
-    width: 200px;
-    bottom: 20px;
-    margin-left: 280px;
-    padding: 6px 0;
-    color: white;
-    background: #eb6864;
-    font-size: 30px;
-    letter-spacing: 1px;
-  }
-}
-@media (min-width: 996px) {
-  .mainCard h2 {
-    position: absolute;
-    z-index: 1;
-    width: 300px;
-    bottom: 50px;
-    margin-left: 80px;
-    padding: 6px 0;
-    color: white;
-    background: #eb6864;
-    font-size: 30px;
-    letter-spacing: 1px;
-  }
-}
-@media (min-width: 1400px) {
-  .mainCard h2 {
-    position: absolute;
-    z-index: 1;
-    width: 300px;
-    bottom: 50px;
-    margin-left: 80px;
-    padding: 6px 0;
-    color: white;
-    background: #eb6864;
-    font-size: 30px;
-    letter-spacing: 1px;
-  }
-}
 /* test */
+.contactInserts {
+  position: relative;
+}
+
 #contactForm input {
   margin-top: 5px;
   margin-left: 3%;
