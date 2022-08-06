@@ -54,4 +54,10 @@
     color: map-get($textStyle, primaryColorText);
 }
 
+.footerContact{
+    z-index: 0;
+    bottom: -320px;
+    margin: 0px;
+}
+
 /* test */ 
