@@ -1,4 +1,6 @@
-
+.contactInserts{
+    position: relative;
+}
 
 #contactForm input{
     margin-top: 5px;
@@ -26,7 +28,9 @@
 #contactForm textarea{
     border: 1px solid #ced4da;
     border-radius: 4px;
-    width: 250px;
+    width: 90%;
+    margin-left: 9px;
+    border-radius: 4px;
 }
 
 #contactForm textarea:focus{
@@ -50,6 +54,12 @@
 .labelText{
     font-weight: map-get($textStyle, medium);
     color: map-get($textStyle, primaryColorText);
+}
+
+.footerContact{
+    z-index: 0;
+    bottom: -320px;
+    margin: 0px;
 }
 
 /* test */ 
