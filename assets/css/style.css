@@ -57,11 +57,12 @@ footer h5 {
   font-family: Roboto;
 }
 
-/* test */
+
 .buttonsMain {
   height: auto;
   position: relative;
   padding-bottom: 30px;
+
 }
 .buttonsMain img {
   width: 400px;
@@ -76,6 +77,7 @@ footer h5 {
   letter-spacing: 1px;
 }
 
+
 @media (max-width: 768px) {
   .buttonsMain h2 {
     font-size: 20px;
@@ -87,6 +89,7 @@ footer h5 {
             justify-content: center;
   }
 }
+
 @media (min-width: 768px) {
   .buttonsMain {
     overflow: hidden;
@@ -111,6 +114,7 @@ footer h5 {
     height: -moz-fit-content;
     height: fit-content;
   }
+
 }
 /* H2 media */
 @media (min-width: 768px) {
@@ -156,6 +160,60 @@ footer h5 {
             transform: scale(1.1);
   }
 }
+.contactInserts {
+  position: relative;
+
+}
+/* H2 media */
+
+
+@media (min-width: 768px) {
+  .mainCard h2 {
+    position: absolute;
+    z-index: 1;
+    width: 200px;
+    bottom: 20px;
+    margin-left: 230px;
+
+    padding: 6px 0;
+    color: white;
+    background: #eb6864;
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+}
+@media (min-width: 996px) {
+  .mainCard h2 {
+    position: absolute;
+    z-index: 1;
+    width: 300px;
+
+    bottom: 20px;
+    margin-left: 180px;
+    padding: 6px 0;
+    color: white;
+    background: #eb6864;
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+  
+  .mainCard:hover::before {
+    left: -180%;
+  }
+  .mainCard img {
+    -webkit-filter: grayscale(80%);
+            filter: grayscale(80%);
+    -webkit-transition: 2s;
+    transition: 2s;
+  }
+  .mainCard:hover img {
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+/* test */
 .contactInserts {
   position: relative;
 }
