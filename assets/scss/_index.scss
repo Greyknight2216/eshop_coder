@@ -5,6 +5,7 @@
 .buttonsMain {
   height: auto;
   position: relative;
+  padding-bottom: 30px;
 
   img {
     width: 400px;
@@ -12,6 +13,7 @@
 
   h2 {
     width: 100%;
+    position: relative;
     margin-bottom: 45px;
     color: white;
     background: $primaryColor;
@@ -32,6 +34,7 @@
   .buttonsMain {
     overflow: hidden;
     width: fit-content;
+    padding: 0;
   }
 
 
@@ -46,6 +49,7 @@
       width: fit-content;
       height: fit-content;
     }
+
   }
 
 }

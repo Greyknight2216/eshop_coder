@@ -1,13 +1,11 @@
-
-
 .saleGrid {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: 'aside'
-                         'rs1'
-                         'rs2'
-                         'rs3'
-                         'rs4'
+        'rs1'
+        'rs2'
+        'rs3'
+        'rs4'
 }
 
 img {
@@ -20,49 +18,30 @@ img {
 .aside {
     grid-area: aside;
     padding: 5px;
-   
-   .diagonal-box {
-       position: relative;
-       z-index: 1;
-       bottom: 520px;
-       width: 100%;
-       background: linear-gradient(90deg, rgba(235,104,100,1) 34%, rgba(235,100,179,1) 100%); 	
-       transform: skewY(-11deg);
-       
-   }
-    .content { 	
-        display: flex;
-        justify-content: center;
-        max-width: 50em;
-        margin: 0 auto; 
-        font-family: Roboto;
-        color: white;
-    }
-   .diagonal-box2 {
-       position: relative;
-       z-index: 1;
-       bottom: 500px;
-       width: 100%;
-       background: linear-gradient(90deg, rgba(235,104,100,1) 34%, rgba(235,100,179,1) 100%); 	
-       transform: skewY(-11deg);
-   }
-    .content2 { 	
-        display: flex;
-        justify-content: center;
-        max-width: 50em;
-        margin: 0 auto; 
-        font-family: Roboto;
-        color: white;
-    }
 }
+
 
 #rs1 {
     grid-area: rs1;
     width: 100%;
     margin: 0;
-    padding: 0px 5px 55px 0px;
+    padding: 5px 5px 100px 5px;
 
     p {
+        display: flex;
+        justify-content: center;
+        color: red;
+        text-decoration: line-through;
+        font-size: 20px;
+        margin: 0px;
+    }
+
+    .discountedPrice {
+        text-decoration: none;
+        color: $primaryColor;
+    }
+
+    .saleText {
         display: flex;
         justify-content: center;
     }
@@ -72,9 +51,23 @@ img {
     grid-area: rs2;
     width: 100%;
     margin: 0;
-    padding: 0px 5px 55px 0px;
+    padding: 5px 5px 100px 0px;
 
     p {
+        display: flex;
+        justify-content: center;
+        color: red;
+        text-decoration: line-through;
+        font-size: 20px;
+        margin: 0px;
+    }
+
+    .discountedPrice {
+        text-decoration: none;
+        color: $primaryColor;
+    }
+
+    .saleText {
         display: flex;
         justify-content: center;
     }
@@ -84,9 +77,23 @@ img {
     grid-area: rs3;
     width: 100%;
     margin: 0;
-    padding: 0px 5px 55px 0px;
+    padding: 5px 5px 100px 5px;
 
     p {
+        display: flex;
+        justify-content: center;
+        color: red;
+        text-decoration: line-through;
+        font-size: 20px;
+        margin: 0px;
+    }
+
+    .discountedPrice {
+        text-decoration: none;
+        color: $primaryColor;
+    }
+
+    .saleText {
         display: flex;
         justify-content: center;
     }
@@ -96,22 +103,109 @@ img {
     grid-area: rs4;
     width: 100%;
     margin: 0;
-    padding: 0px 5px 55px 0px;
+    padding: 5px 5px 100px 0px;
 
     p {
         display: flex;
         justify-content: center;
+        color: red;
+        text-decoration: line-through;
+        font-size: 20px;
+        margin: 0px;
+    }
+
+
+    .saleText {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer {
+        padding-bottom: 8px;
     }
 }
 
-.saleText {
-    display: flex;
-    justify-content: center;
+
+@media (min-width: 320px) {
+
+    .diagonal-box {
+        position: relative;
+        z-index: 1;
+        bottom: 450px;
+        width: 100%;
+        background: linear-gradient(90deg, rgba(235, 104, 100, 1) 34%, rgba(235, 100, 179, 1) 100%);
+        transform: skewY(-11deg);
+
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+        max-width: 50em;
+        margin: 0 auto;
+        font-family: Roboto;
+        color: white;
+    }
+
+    .diagonal-box2 {
+        position: relative;
+        z-index: 1;
+        bottom: 430px;
+        width: 100%;
+        background: linear-gradient(90deg, rgba(235, 104, 100, 1) 34%, rgba(235, 100, 179, 1) 100%);
+        transform: skewY(-11deg);
+    }
+
+    .content2 {
+        display: flex;
+        justify-content: center;
+        max-width: 50em;
+        margin: 0 auto;
+        font-family: Roboto;
+        color: white;
+    }
 }
 
-footer{
-    padding-bottom: 8px;
+@media (min-width: 465px) {
+
+    .diagonal-box {
+        position: relative;
+        z-index: 1;
+        bottom: 700px;
+        width: 100%;
+        background: linear-gradient(90deg, rgba(235, 104, 100, 1) 34%, rgba(235, 100, 179, 1) 100%);
+        transform: skewY(-11deg);
+
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+        max-width: 50em;
+        margin: 0 auto;
+        font-family: Roboto;
+        color: white;
+    }
+
+    .diagonal-box2 {
+        position: relative;
+        z-index: 1;
+        bottom: 680px;
+        width: 100%;
+        background: linear-gradient(90deg, rgba(235, 104, 100, 1) 34%, rgba(235, 100, 179, 1) 100%);
+        transform: skewY(-11deg);
+    }
+
+    .content2 {
+        display: flex;
+        justify-content: center;
+        max-width: 50em;
+        margin: 0 auto;
+        font-family: Roboto;
+        color: white;
+    }
 }
+
 
 @media (min-width: 768px) {
 
@@ -119,7 +213,7 @@ footer{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 'aside rs1 rs2'
-                             'aside rs3 rs4'
+            'aside rs3 rs4'
 
     }
 
@@ -134,163 +228,162 @@ footer{
     .aside {
         grid-area: aside;
         padding: 5px;
-       
-       .diagonal-box {
-           position: relative;
-           z-index: 1;
-           bottom: 1350px;
-           width: 100%;
-           background: linear-gradient(90deg, rgba(235,104,100,1) 34%, rgba(235,100,179,1) 100%); 	
-           transform: skewY(-11deg);
-           
-       }
-        .content { 	
+
+        .diagonal-box {
+            position: relative;
+            z-index: 1;
+            bottom: 800px;
+            width: 100%;
+            background: linear-gradient(90deg, rgba(235, 104, 100, 1) 34%, rgba(235, 100, 179, 1) 100%);
+            transform: skewY(-11deg);
+
+        }
+
+        .content {
             display: flex;
             justify-content: center;
             max-width: 50em;
-            margin: 0 auto; 
+            margin: 0 auto;
             font-family: Roboto;
             color: white;
         }
-       .diagonal-box2 {
-           position: relative;
-           z-index: 1;
-           bottom: 1320px;
-           width: 100%;
-           background: linear-gradient(90deg, rgba(235,104,100,1) 34%, rgba(235,100,179,1) 100%); 	
-           transform: skewY(-11deg);
-       }
-        .content2 { 	
+
+        .diagonal-box2 {
+            position: relative;
+            z-index: 1;
+            bottom: 780px;
+            width: 100%;
+            background: linear-gradient(90deg, rgba(235, 104, 100, 1) 34%, rgba(235, 100, 179, 1) 100%);
+            transform: skewY(-11deg);
+        }
+
+        .content2 {
             display: flex;
             justify-content: center;
             max-width: 50em;
-            margin: 0 auto; 
+            margin: 0 auto;
             font-family: Roboto;
             color: white;
         }
-    }
-
-    #rs1 {
-        grid-area: rs1;
-        width: 100%;
-        margin: 0;
-        padding: 5px 5px 100px 5px;
-
-        p {
-            display: flex;
-            justify-content: center;
-            color:red;
-            text-decoration: line-through;
-            font-size: 20px;
-            margin: 0px;
-        }
-        .discountedPrice{
-            text-decoration: none;
-            color:  $primaryColor;
-        }
-    }
-
-    #rs2 {
-        grid-area: rs2;
-        width: 100%;
-        margin: 0;
-        padding: 5px 5px 100px 0px;
-
-        p {
-            display: flex;
-            justify-content: center;
-            color:red;
-            text-decoration: line-through;
-            font-size: 20px;
-            margin: 0px;
-        }
-        .discountedPrice{
-            text-decoration: none;
-            color:  $primaryColor;
-        }
-    }
-
-    #rs3 {
-        grid-area: rs3;
-        width: 100%;
-        margin: 0;
-        padding: 5px 5px 100px 5px;
-
-        p {
-            display: flex;
-            justify-content: center;
-            color:red;
-            text-decoration: line-through;
-            font-size: 20px;
-            margin: 0px;
-        }
-        .discountedPrice{
-            text-decoration: none;
-            color:  $primaryColor;
-        }
-    }
-
-    #rs4 {
-        grid-area: rs4;
-        width: 100%;
-        margin: 0;
-        padding: 5px 5px 100px 0px;
-
-        p {
-            display: flex;
-            justify-content: center;
-            color:red;
-            text-decoration: line-through;
-            font-size: 20px;
-            margin: 0px;
-        }
-        .discountedPrice{
-            text-decoration: none;
-            color:  $primaryColor;
-        }
-    }
-
-    .saleText {
-        display: flex;
-        justify-content: center;
     }
 }
 
-@media (min-width: 425px) {
+@media (min-width: 1440px) {
+
+    .saleGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 'aside rs1 rs2'
+            'aside rs3 rs4'
+
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+
+    }
+
+
     .aside {
         grid-area: aside;
         padding: 5px;
-       
-       .diagonal-box {
-           position: relative;
-           z-index: 1;
-           bottom: 1350px;
-           width: 100%;
-           background: linear-gradient(90deg, rgba(235,104,100,1) 34%, rgba(235,100,179,1) 100%); 	
-           transform: skewY(-11deg);
-           
-       }
-        .content { 	
+
+        .diagonal-box {
+            position: relative;
+            z-index: 1;
+            bottom: 1200px;
+            width: 100%;
+            background: linear-gradient(90deg, rgba(235, 104, 100, 1) 34%, rgba(235, 100, 179, 1) 100%);
+            transform: skewY(-11deg);
+
+        }
+
+        .content {
             display: flex;
             justify-content: center;
             max-width: 50em;
-            margin: 0 auto; 
+            margin: 0 auto;
             font-family: Roboto;
             color: white;
         }
-       .diagonal-box2 {
-           position: relative;
-           z-index: 1;
-           bottom: 1320px;
-           width: 100%;
-           background: linear-gradient(90deg, rgba(235,104,100,1) 34%, rgba(235,100,179,1) 100%); 	
-           transform: skewY(-11deg);
-       }
-        .content2 { 	
+
+        .diagonal-box2 {
+            position: relative;
+            z-index: 1;
+            bottom: 1180px;
+            width: 100%;
+            background: linear-gradient(90deg, rgba(235, 104, 100, 1) 34%, rgba(235, 100, 179, 1) 100%);
+            transform: skewY(-11deg);
+        }
+
+        .content2 {
             display: flex;
             justify-content: center;
             max-width: 50em;
-            margin: 0 auto; 
+            margin: 0 auto;
+            font-family: Roboto;
+            color: white;
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+
+    .saleGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 'aside rs1 rs2'
+            'aside rs3 rs4'
+
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+
+    }
+
+
+    .aside {
+        grid-area: aside;
+        padding: 5px;
+
+        .diagonal-box {
+            position: relative;
+            z-index: 1;
+            bottom: 1350px;
+            width: 100%;
+            background: linear-gradient(90deg, rgba(235, 104, 100, 1) 34%, rgba(235, 100, 179, 1) 100%);
+            transform: skewY(-11deg);
+
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            max-width: 50em;
+            margin: 0 auto;
+            font-family: Roboto;
+            color: white;
+        }
+
+        .diagonal-box2 {
+            position: relative;
+            z-index: 1;
+            bottom: 1330px;
+            width: 100%;
+            background: linear-gradient(90deg, rgba(235, 104, 100, 1) 34%, rgba(235, 100, 179, 1) 100%);
+            transform: skewY(-11deg);
+        }
+
+        .content2 {
+            display: flex;
+            justify-content: center;
+            max-width: 50em;
+            margin: 0 auto;
             font-family: Roboto;
             color: white;
         }
