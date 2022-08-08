@@ -424,7 +424,13 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
+    }
+  
+#rs4 .discountedPrice {
+    text-decoration: none;
+    color: $primaryColor;
+    }
+
 #rs4 footer {
   padding-bottom: 8px;
 }
